@@ -1,0 +1,64 @@
+body,
+html,
+p,
+ul,
+li,
+ol,
+dt,
+dl,
+dd,
+form,
+a,
+img,
+input,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+th,
+i,
+b,
+strong,
+em {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul li,
+ol li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+	border: none;
+}
+
+html,body {
+	width:100%;
+	height:100%;
+}
+
+.clearfix:after {
+	content: "";
+	visibility: hidden;
+	display: block;
+	clear: both;
+	height: 0;
+	font-size: 0;
+	overflow: hidden;
+}

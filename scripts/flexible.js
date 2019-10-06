@@ -28,7 +28,7 @@ function resetRemUnit(){
     width = max;
   }
   // 计算rem
-  document.documentElement.style.fontSize = (width * 100 / 640) + 'px';
+  document.documentElement.style.fontSize = (width * 100 / 1080) + 'px';
 }
 
 resetRemUnit();
