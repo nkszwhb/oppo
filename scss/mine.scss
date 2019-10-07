@@ -1,0 +1,381 @@
+
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+
+header{
+	height: 1.12rem;
+	width: 100%;
+	padding: 0 0.44rem;
+	box-sizing: border-box;
+	display: flex;
+	border-bottom: #F2F3F3 solid 1px;
+	.h-left{
+		flex: 1;
+		display: flex;
+		font-size: 0.4rem;
+		align-items: center;
+		.mine-tag{
+			font-size: 0.4rem;
+			padding: 0 0.3rem;
+		}
+	}
+	.h-right{
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		#setting,
+		#my-message{
+			font-size: 0.4rem;
+			padding: 0 0.3rem;
+		}
+	}
+}
+
+
+.main{
+	width: 100%;
+	flex: 1;
+	padding: 0 0.44rem;
+	overflow: auto;
+	box-sizing: border-box;
+	.mine-wrap{
+		height: 2.58rem;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.mine-pic{
+			display: block;
+			border-radius: 50%;
+			height: 1.46rem;
+			width: 1.46rem;
+			.mine-img{
+				height: 1.46rem;
+				width: 1.46rem;
+				border-radius: 50%;
+			}
+			.mine-icon{
+				display: block;
+				height: 1.46rem;
+				width: 1.46rem;
+				background: #ddd;
+				border-radius: 50%;
+				color: #fff;
+				text-align: center;
+				font-size: 0.6rem;
+				line-height: 1.46rem;
+			}
+		}
+		.mine-midbox{
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-left:0.3rem ;
+			box-sizing: border-box;
+			.mine-account{
+				height: 0.6rem;
+				line-height: 0.6rem;
+				font-size: 0.46rem;
+				font-weight: bold;				
+			}
+			.state-wrap{
+				height: 0.5rem;
+				width: 100%;
+				display: flex;
+				margin-top:0.3rem ;
+				.state-tag{
+					height: 0.5rem;
+					line-height: 0.5rem;
+					font-size: 0.22rem;
+					padding: 0 0.15rem;
+					border-radius: 0.1rem;
+					background: #F1EEEF;
+					color: #787777;
+					margin-right:0.3rem ;
+				}
+				.state-tag:nth-of-type(2){
+					background: #36F4CE;
+				}
+			}
+		}
+		.login-btn{
+			height: 0.71rem;
+			line-height: 0.71rem;
+			width: 1.34rem;
+			background: #F45136;
+			font-size: 0.34rem;
+			color: #fff;
+			text-align: center;
+			border-radius: 0.12rem;
+		}
+	}
+	
+	.ticket-wrap{
+		height: 2.4rem;
+		width: 100%;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-around;
+		.ticket-card{
+			width: 2.40rem;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.ticket-num{
+				height: 0.8rem;
+				font-size: 0.32rem;
+				line-height: 0.8rem;
+				font-weight: bold;
+				text-align: center;
+			}
+			.ticket-title{
+				display: block;
+				text-align: center;
+				height: 0.7rem;
+				font-size: 0.28rem;
+				line-height: 0.7rem;
+				color: #838384;
+			}
+		}
+	}
+	
+	.mine-order{
+		height: 3.07rem;
+		width: 100%;
+		.order-item-wrap{
+			height: 1.98rem;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			.order-item{
+				height: 100%;
+				width: 1.55rem;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+				.order-item-icon{
+					font-size: 0.56rem;
+					font-weight: 400;
+				}
+				.order-item-title{
+					height: 0.7rem;
+					line-height: 0.7rem;
+					font-size: 0.26rem;
+				}
+			}
+		}
+	}
+	
+	
+	.task-wrap{
+		height: 3.5rem;
+		width: 100%;
+		.task-item-wrap{
+			height: 2.10rem;
+			width: 100%;
+			overflow: auto;
+			.task-item-box{
+				width: 200%;
+				height: 2.1rem;
+				padding:  0.1rem 0;
+				box-sizing: border-box;
+			}
+			.task-card{
+				height: 1.9rem;
+				width: 2.83rem;
+				display: inline-block;
+				// margin-right: 0.14rem;
+				background: #08D3B3;
+				color: #fff;
+				position: relative;
+				border-radius: 0.15rem;
+				.task-title{
+					display: block;
+					height: 0.6rem;
+					font-size: 0.32rem;
+					line-height: 0.6rem;
+					margin-top: 0.2rem;
+					margin-left: 0.3rem;
+				}
+				.task-content{
+					display: block;
+					height: 0.4rem;
+					font-size: 0.24rem;
+					margin-left: 0.3rem;
+					line-height: 0.4rem;
+				}
+				.task-icon{
+					font-size: 0.9rem;
+					position: absolute;
+					bottom: 0.2rem;
+					right: 0.2rem;
+				}
+			}
+		}
+	}
+	
+	.tools-wrap{
+		height: 3.07rem;
+		width: 100%;
+		.tools-item-wrap{
+			height: 1.98rem;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			.tools-item{
+				height: 100%;
+				width: 1.55rem;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+				.tools-item-icon{
+					font-size: 0.6rem;
+					font-weight: 500;
+				}
+				.tools-item-title{
+					height: 0.7rem;
+					line-height: 0.7rem;
+					font-size: 0.26rem;
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	.activity-wrap{
+		width: 100%;
+		// overflow: hidden;
+		.activity-box{
+			width: 100%;
+			.activity-card{
+				height: 2.76rem;
+				display: block;
+				width: 100%;
+				position: relative;
+				overflow: hidden;
+				border-radius: 0.24rem;
+				margin-bottom: 0.3rem;
+				.act-img{
+					height: 100%;
+					width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: -1;
+				}
+				.act-title{
+					height: 0.7rem;
+					line-height: 0.7rem;
+					font-size: 0.42rem;
+					color: #fff;
+					margin-top: 0.3rem;
+					margin-left: 0.3rem;
+				}
+				.act-con{
+					display: block;
+					height: 0.42rem;
+					line-height: 0.42rem;
+					font-size: 0.24rem;
+					color: #fff;
+					margin-left: 0.3rem;
+				}
+				.act-btn{
+					display: block;
+					height: 0.54rem;
+					line-height: 0.54rem;
+					font-size: 0.24rem;
+					color: #fff;
+					background: #F55D4C;
+					width: 1.8rem;
+					text-align: center;
+					margin-left: 0.3rem;
+					margin-top: 0.3rem;
+					border-radius: 0.27rem;
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+}
+
+.mine-title{
+	height: 1.08rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.mine-title-l{
+		font-size: 0.36rem;
+		font-weight: 400;
+	}
+	.mine-title-r{
+		color: #B0B1B1;
+		font-size: 0.3rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	display: flex;
+	height: 1.5rem;
+	width: 100%;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 0 0.44rem;
+	border-top: #d6d6d6 solid 1px ;
+}
+.footerbtn{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footerbtn .footer-icon{
+	font-size: 0.5rem;
+	color: #ccc;
+}
+
+.footerbtn i{
+	font-size: 0.24rem;
+	color: #ccc;
+	font-style: normal;
+}
+
+.footer-active .footer-icon{
+	color: #f84431 !important;
+}
+.footer-active i{
+	color: #f84431 !important;
+}
+
+
+
+
+
+
+

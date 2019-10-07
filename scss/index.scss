@@ -1,6 +1,11 @@
-
+body{
+	display: flex;
+	flex-direction: column;
+}
 .wrap{
+	flex: 1;
 	width: 100%;
+	overflow: auto;
 	background: #F5F5F5;
 }
 header{
@@ -23,17 +28,20 @@ header{
 	width: 100%;
 }
 .searchbox{
-	position: absolute;
+	position: fixed;
+	top: 0;
 	width: 100%;
-	top: 0.5rem;
-	height: 0.88rem;
-	padding: 0 0.55rem;
+	height: 1.58rem;
+	padding:0 0.55rem;
 	box-sizing: border-box;
+	justify-content: space-between;
 	z-index: 10;
+	display: flex;
+	align-items: center;
 }
 .searchbox .inputbox{
 	width: 7.9rem;
-	height: 100%;
+	height: 0.88rem;
 	background: #FFFFFF;
 	display: block;
 	border-radius: 0.12rem;
@@ -59,6 +67,9 @@ header{
 	margin-top: 0.22rem;
 	font-size: 0.24rem;
 	overflow: hidden;
+}
+.searchbox .inputright{
+	height: 0.88rem;
 }
 .searchbox .inputright .sb_icon:nth-of-type(1){
 	color: #FFFFFF !important;
@@ -164,6 +175,190 @@ header{
 	border-radius: 0.16rem;
 }
 
+.snap-up{
+	height: 5.16rem;
+	width: 100%;
+	padding: 0 0.33rem;
+	box-sizing: border-box;
+	.snap-up-l{
+		display: flex;
+		align-items: baseline;
+	}
+	.flash-icon{
+		font-size: 0.37rem;
+		color: #F45136;
+	}
+	.f-time-wrap{
+		color: #999999;
+		font-size: 0.3rem;
+	}
+	#flash-time{
+		color:#F45136;
+		margin: 0 0.1rem;
+	}
+	.snap-up-more{
+		color: #999;
+		font-size: 0.3rem;
+	}
+	.snap-card-wrap{
+		height: 3.64rem;
+		border-radius: 0.16rem;
+		background: #fff;
+		padding: 0 0.1rem;
+	}
+	.snap-card{
+		width: 2.36rem;
+		.snap-card-img{
+			height: 2.3rem;
+			width: 2.3rem;
+			display: block;
+		}
+		.snap-card-title{
+			font-size: 0.28rem;
+			color: #000;
+			line-height: 0.5rem;
+		}
+		.snap-card-charge{
+			display: flex;
+			align-items: baseline;
+			.c-charge{
+				font-size: 0.28rem;
+				color: #F45136;
+			}
+			.o-charge{
+				font-size: 0.2rem;
+				text-decoration: line-through;
+				color: #B3B3B3;
+			}
+		}
+	}
+}
+
+.bar-wrap{
+	height: 1.13rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.bar-title{
+		font-size: 0.37rem;
+	}
+}
+
+
+// 滚动通用布局样式
+.scroll-wrap{
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	overflow: auto;
+	box-sizing: border-box;
+	.scroll-card{
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+}
+.smart-home{
+	height: 6.19rem;
+	padding: 0 0.33rem;
+	box-sizing: border-box;
+}
+.smart-home-wrap{
+	height: 4.68rem;
+	width: 100%;
+	justify-content: space-between;
+	.smart-home-card{
+		height: 4.68rem;
+		width: 3.16rem;
+		background: #fff;
+		display: flex;
+		justify-content: space-between;
+		margin-right: 0.2rem;
+		border-radius: 0.3rem;
+		.smart-card-img{
+			height: 3.16rem;
+			width: 3.16rem;
+			background: #ddd;
+			border-top-right-radius: 0.3rem;
+			border-top-left-radius: 0.3rem;
+		}
+		.smart-card-title{
+			font-size: 0.28rem;
+			line-height: 0.54rem;
+			font-weight: 500;
+		}
+		.smart-card-content{
+			font-size: 0.24rem;
+			line-height: 0.4rem;
+		}
+		.smart-charge{
+			font-size: 0.24rem;
+			line-height: 0.6rem;
+			color: #D75D48;
+		}
+	}
+}
+
+.popular-phone{
+	width: 100%;
+	padding:  0 0.33rem;
+	box-sizing: border-box;
+	overflow: hidden;
+	.popular-phone-wrap{
+		width: 100%;
+		overflow: hidden;
+		display: flex;
+		border-radius: 0.3rem;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 0.3rem;
+		.popular-phone-card{
+			height: 6.19rem;
+			width: 5.04rem;
+			display: flex;
+			background: #fff;
+			margin-bottom: 0.06rem;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.phone-card-img{
+				height: 3.8rem;
+				width: 3.8rem;
+			}
+			.phone-card-title{
+				font-size: 0.32rem;
+				height: 0.6rem;
+				color: #000;
+				line-height: 0.6rem;
+				text-align: center;
+			}
+			.phone-card-content{
+				font-size: 0.28rem;
+				height: 0.5rem;
+				line-height: 0.5rem;
+				color: #C1C1C1;
+			}
+			.phone-card-charge{
+				font-size: 0.28rem;
+				height: 0.4rem;
+				line-height: 0.4rem;
+				color: #F45136;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -171,12 +366,9 @@ header{
 
 
 footer{
-	display: flex;
 	height: 1.5rem;
 	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	display: flex;
 	background: #fff;
 	box-sizing: border-box;
 	padding: 0 0.44rem;

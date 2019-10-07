@@ -1,0 +1,188 @@
+body {
+  display: flex;
+  flex-direction: column; }
+
+header {
+  height: 1.38rem;
+  width: 100%;
+  background: #999; }
+
+.main {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: auto; }
+
+.left-wrap,
+.right-wrap {
+  height: 100%;
+  overflow: auto; }
+
+.left-wrap {
+  width: 2.6rem;
+  background: #fff; }
+  .left-wrap .cls-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .left-wrap .cls-menu li {
+      height: 1.08rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .left-wrap .cls-menu .cls-tags {
+      color: #B3B3B3;
+      font-size: 0.3rem;
+      line-height: 1.08rem;
+      text-align: center; }
+    .left-wrap .cls-menu .cls-items a {
+      display: block;
+      color: #000;
+      width: 100%;
+      text-align: center;
+      font-size: 0.34rem;
+      line-height: 0.4rem; }
+    .left-wrap .cls-menu .cls-items-active {
+      color: #F45136 !important;
+      position: relative; }
+    .left-wrap .cls-menu .cls-items-active:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 0.4rem;
+      width: 0.1rem;
+      background: #F45136; }
+
+.right-wrap {
+  background: #F5F5F5;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0 0.33rem; }
+
+.cls-box .cls-logo {
+  width: 100%;
+  height: 2.22rem;
+  border-radius: 0.2rem;
+  background: #ECB51D;
+  position: relative;
+  margin-top: 0.6rem; }
+  .cls-box .cls-logo .cls-logo-pic {
+    position: absolute;
+    height: 2.6rem;
+    width: 3rem;
+    bottom: 0;
+    left: 0; }
+  .cls-box .cls-logo .cls-logo-content {
+    position: absolute;
+    height: 2.22rem;
+    width: 4.90rem;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .cls-box .cls-logo .cls-logo-content h4 {
+      font-weight: normal;
+      font-size: 0.35rem;
+      line-height: 0.6rem;
+      text-align: center; }
+    .cls-box .cls-logo .cls-logo-content p {
+      font-size: 0.24rem;
+      line-height: 0.3rem;
+      text-align: center; }
+    .cls-box .cls-logo .cls-logo-content h6 {
+      font-weight: normal;
+      font-size: 0.2rem;
+      line-height: 0.6rem;
+      text-align: center; }
+
+.cls-title {
+  line-height: 1.64rem;
+  height: 1.64rem;
+  width: 100%;
+  font-size: 0.36rem;
+  text-align: center; }
+
+.cls-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-between;
+  border-radius: 0.2rem; }
+
+.cls-wrap .shopcard {
+  height: 4.7rem;
+  width: 3.73rem;
+  margin-bottom: 0.06rem;
+  background: #fff;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center; }
+  .cls-wrap .shopcard .shopcard-img {
+    display: block;
+    height: 2.7rem;
+    width: 2.7rem;
+    margin-top: 0.2rem; }
+  .cls-wrap .shopcard .shopcard-title {
+    line-height: 0.56rem;
+    height: 0.56rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+    text-align: center; }
+  .cls-wrap .shopcard .shopcard-discount {
+    line-height: 0.4rem;
+    height: 0.4rem;
+    font-size: 0.24rem;
+    text-align: center; }
+  .cls-wrap .shopcard .shopcard-charge {
+    height: 0.77rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center; }
+    .cls-wrap .shopcard .shopcard-charge .present-price {
+      display: inline-block;
+      line-height: 0.77rem;
+      height: 0.77rem;
+      font-size: 0.3rem; }
+    .cls-wrap .shopcard .shopcard-charge .original-price {
+      display: inline-block;
+      font-size: 0.2rem;
+      color: #999999;
+      text-decoration: line-through; }
+
+footer {
+  display: flex;
+  height: 1.5rem;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0 0.44rem;
+  border-top: #d6d6d6 solid 1px; }
+
+.footerbtn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+.footerbtn .footer-icon {
+  font-size: 0.5rem;
+  color: #ccc; }
+
+.footerbtn i {
+  font-size: 0.24rem;
+  color: #ccc;
+  font-style: normal; }
+
+.footer-active .footer-icon {
+  color: #f84431 !important; }
+
+.footer-active i {
+  color: #f84431 !important; }

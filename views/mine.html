@@ -3,7 +3,206 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common_css.css" />
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mine.css" />
 	</head>
 	<body>
+
+		<header>
+			<div class="h-left">
+				<span class="mine-tag">我的</span>
+			</div>
+			<div class="h-right">
+				<span id="setting" class="iconfont">&#xe622;</span>
+				<span id="my-message" class="iconfont">&#xe6c7;</span>
+			</div>
+		</header>
+
+		<div class="main">
+			<div class="mine-wrap">
+				<div class="mine-pic">
+					<span class="iconfont mine-icon">&#xe690;</span>
+					<img style="display: none;" class="mine-img" src="http://b-ssl.duitang.com/uploads/item/201801/26/20180126224202_yzd8h.jpeg">
+				</div>
+				<div class="mine-midbox">
+					<h4 class="mine-account">登录 oppo 账号</h4>
+					<div class="state-wrap">
+						<span style="display: none;" class="state-tag">体验更多功能</span>
+						<span class="state-tag">普卡会员</span>
+						<span class="state-tag">账号：187****9838</span>
+					</div>
+				</div>
+				<a class="login-btn" href="#">登录</a>
+			</div>
+
+
+			<div class="ticket-wrap">
+				<div class="ticket-card">
+					<p class="ticket-num">66</p>
+					<span class="ticket-title">优惠券</span>
+				</div>
+				<div class="ticket-card">
+					<p class="ticket-num">￥26.25</p>
+					<span class="ticket-title">回收代金券</span>
+				</div>
+				<div class="ticket-card">
+					<p class="ticket-num">265</p>
+					<span class="ticket-title">积分</span>
+				</div>
+			</div>
+
+			<div class="mine-order">
+				<div class="mine-title">
+					<span class="mine-title-l">我的订单</span>
+					<a class="mine-title-r" id="all-order" href="">全部订单></a>
+				</div>
+				<div class="order-item-wrap">
+					<a class="order-item">
+						<span class="iconfont order-item-icon">&#xe600;</span>
+						<p class="order-item-title">待付款</p>
+					</a>
+					<a class="order-item">
+						<span class="iconfont order-item-icon">&#xe613;</span>
+						<p class="order-item-title">待发货</p>
+					</a>
+					<a class="order-item">
+						<span class="iconfont order-item-icon">&#xe608;</span>
+						<p class="order-item-title">已发货</p>
+					</a>
+					<a class="order-item">
+						<span class="iconfont order-item-icon">&#xe6c7;</span>
+						<p class="order-item-title">待评价</p>
+					</a>
+					<a class="order-item">
+						<span class="iconfont order-item-icon">&#xe635;</span>
+						<p class="order-item-title">回收单</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="task-wrap">
+				<div class="mine-title">
+					<span class="mine-title-l">做任务赚积分</span>
+					<a class="mine-title-r" id="more-task" href="">更多任务></a>
+				</div>
+				<div class="task-item-wrap">
+					<div class="task-item-box">
+						<a class="task-card">
+							<span class="task-title">积分攻略</span>
+							<span class="task-content">轻松赚积分</span>
+							<span class="task-icon iconfont">&#xe64c;</span>
+						</a>
+						<a class="task-card">
+							<span class="task-title">积分攻略</span>
+							<span class="task-content">轻松赚积分</span>
+							<span class="task-icon iconfont">&#xe64c;</span>
+						</a>
+						<a class="task-card">
+							<span class="task-title">积分攻略</span>
+							<span class="task-content">轻松赚积分</span>
+							<span class="task-icon iconfont">&#xe64c;</span>
+						</a>
+						<a class="task-card">
+							<span class="task-title">积分攻略</span>
+							<span class="task-content">轻松赚积分</span>
+							<span class="task-icon iconfont">&#xe64c;</span>
+						</a>
+						<a class="task-card">
+							<span class="task-title">积分攻略</span>
+							<span class="task-content">轻松赚积分</span>
+							<span class="task-icon iconfont">&#xe64c;</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="tools-wrap">
+				<div class="mine-title">
+					<span class="mine-title-l">常用工具</span>
+				</div>
+				<div class="tools-item-wrap">
+					<a class="tools-item">
+						<span style="color: #F6C611;" class="iconfont tools-item-icon">&#xe7ed;</span>
+						<p class="tools-item-title">积分商城</p>
+					</a>
+					<a class="tools-item">
+						<span style="color: #18CB88;" class="iconfont tools-item-icon">&#xe613;</span>
+						<p class="tools-item-title">流量充值</p>
+					</a>
+					<a class="tools-item">
+						<span style="color: #FF5A43;" class="iconfont tools-item-icon">&#xe601;</span>
+						<p class="tools-item-title">收获地址</p>
+					</a>
+					<a class="tools-item">
+						<span style="color: #F9CA1E;" class="iconfont tools-item-icon">&#xe6c7;</span>
+						<p class="tools-item-title">意见反馈</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="activity-wrap">
+				<div class="mine-title">
+					<span class="mine-title-l">活动推荐</span>
+				</div>
+				<div class="activity-box">
+					<a class="activity-card" href="#">
+						<img class="act-img" src="https://dsfs.oppo.com/archives/201909/201909160709265d7f7126d6c29.jpg?x-oss-process=image/format,webp" >
+						<h3 class="act-title">积分当钱花</h3>
+						<span class="act-con">玩转积分 | 100积分=1元</span>
+						<span class="act-btn">马上换钱</span>
+					</a>
+					<a class="activity-card" href="#">
+						<img class="act-img" src="https://dsfs.oppo.com/archives/201909/201909160709265d7f7126d6c29.jpg?x-oss-process=image/format,webp" >
+						<h3 class="act-title">积分当钱花</h3>
+						<span class="act-con">玩转积分 | 100积分=1元</span>
+						<span class="act-btn">马上换钱</span>
+					</a>
+					<a class="activity-card" href="#">
+						<img class="act-img" src="https://dsfs.oppo.com/archives/201909/201909160709265d7f7126d6c29.jpg?x-oss-process=image/format,webp" >
+						<h3 class="act-title">积分当钱花</h3>
+						<span class="act-con">玩转积分 | 100积分=1元</span>
+						<span class="act-btn">马上换钱</span>
+					</a>
+					<a class="activity-card" href="#">
+						<img class="act-img" src="https://dsfs.oppo.com/archives/201909/201909160709265d7f7126d6c29.jpg?x-oss-process=image/format,webp" >
+						<h3 class="act-title">积分当钱花</h3>
+						<span class="act-con">玩转积分 | 100积分=1元</span>
+						<span class="act-btn">马上换钱</span>
+					</a>
+				</div>
+			</div>
+
+
+		</div>
+
+		<footer>
+			<div class="footerbtn footer-active">
+				<span class="iconfont footer-icon">&#xe605;</span>
+				<i>首页</i>
+			</div>
+			<div class="footerbtn">
+				<span class="iconfont footer-icon">&#xe606;</span>
+				<i>分类</i>
+			</div>
+			<div class="footerbtn">
+				<span class="iconfont footer-icon">&#xe7ed;</span>
+				<i>服务</i>
+			</div>
+			<div class="footerbtn">
+				<span class="iconfont footer-icon">&#xe60b;</span>
+				<i>购物车</i>
+			</div>
+			<div class="footerbtn">
+				<span class="iconfont footer-icon">&#xe690;</span>
+				<i>我的</i>
+			</div>
+		</footer>
+
+
+		<script type="text/javascript" src="../scripts/flexible.js"></script>
+		<script type="text/javascript" src="../scripts/zepto.js"></script>
+		<script type="text/javascript" src="../scripts/swiper.jquery.min.js"></script>
+		<script type="text/javascript" src="../scripts/mine.js"></script>
 	</body>
 </html>

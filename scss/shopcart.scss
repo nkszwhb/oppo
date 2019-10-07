@@ -1,0 +1,238 @@
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+	height: 1.38rem;
+	width: 100%;
+	background: #fff;
+	.shopcart-title{
+		height: 100%;
+		line-height: 1.38rem;
+		padding: 0 0.63rem;
+		font-size: 0.42rem;
+		font-weight: bold;
+	}
+}
+
+.main{
+	width: 100%;
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	overflow: auto;
+	background: #F7F8FA;
+}
+
+.no-shop{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	.no-shop-icon{
+		margin-top: 2rem;
+		font-size: 2rem;
+		font-weight: 100;
+		color:#999;
+	}
+	p{
+		font-size: 0.35rem;
+		line-height: 1.6rem;
+		text-align: center;
+		color: #999999;
+	}
+	.go-to-index{
+		height: 1.04rem;
+		width: 2.93rem;
+		line-height: 1.04rem;
+		background: #F63434;
+		text-align: center;
+		border-radius: 0.18rem;
+		font-size: 0.36rem;
+		color: #fff;
+	}
+}
+
+
+
+
+
+
+
+
+.shopcardbox{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	
+	.shopwrap{
+		width: 100%;
+		padding: 0.5rem 0.51rem;
+		box-sizing: border-box;
+		flex: 1;
+		overflow: auto;
+		.sc-card{
+			width: 100%;
+			height: 3.11rem;
+			padding: 0.3rem;
+			box-sizing: border-box;
+			margin-bottom: 0.30rem;
+			display: flex;
+			background: #fff;
+			border-radius: 0.18rem;
+			.sc-card-left{
+				width: 2.8rem;
+				height: 100%;
+				.choose{
+					height: 0.46rem;
+					width: 0.46rem;
+					display: inline-block;
+				}
+				.sc-card-img{
+					height: 1.8rem;
+					width: 1.8rem;
+				}
+			}
+		}
+	}
+	.shopcharge{
+		height: 1.63rem;
+		width: 100%;
+		align-items: baseline;
+		box-sizing: border-box;
+		padding: 0 0.34rem;
+		display: flex;
+		justify-content: space-between;
+		border-top: #E5E5E5 solid 1px;
+		.tc-name{
+			font-size: 0.36rem;
+			color: #000;
+		}
+		.change-info,
+		#charge-num{
+			font-size: 0.48rem;
+			line-height: 1.63rem;
+			color: #F63434;
+		}
+		#go-pay{
+			width: 2.96rem;
+			height: 1.03rem;
+			color: #fff;
+			border-radius: 0.18rem;
+			font-size: 0.37rem;
+			background: #F63434;
+			text-align: center;
+			line-height: 1.03rem;
+		}
+	}
+}
+
+.sc-card-right{
+	flex: 1;
+	padding: 0 0.5rem ;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	.sc-card-title{
+		font-size: 0.36rem;
+		line-height: 0.6rem;
+		margin: 0;
+	}
+	.charge-box{
+		height: 0.7rem;
+		display: flex;
+		align-items: baseline;
+		.c-charge{
+			font-size: 0.4rem;
+			height: 0.7rem;
+			line-height: 0.7rem;
+			color: #F63434;
+		}
+		.o-charge{
+			font-size: 0.3rem;
+			height: 0.4rem;
+			line-height: 0.4rem;
+			color: #C8C8C8;
+			text-decoration: line-through;
+		}
+	}
+	.oparate-box{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.num-box{
+			display: flex;
+			align-items: center;
+			height: 0.8rem;
+			.dec-num,.inc-num{
+				display: inline-block;
+				height: 0.62rem;
+				line-height: 0.62rem;
+				width: 0.62rem;
+				font-size: 0.4rem;
+				background: #F7F8FA;
+				text-align: center;
+				border-radius: 0.18rem;
+			}
+			.num{
+				display: inline-block;
+				font-size: 0.3rem;
+				text-align: center;
+				width: 0.8rem;
+			}
+		}
+		
+		
+		.delete{
+			font-size: 0.5rem;
+			line-height: 0.62rem;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+footer{
+	display: flex;
+	height: 1.5rem;
+	width: 100%;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 0 0.44rem;
+	border-top: #d6d6d6 solid 1px ;
+}
+.footerbtn{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footerbtn .footer-icon{
+	font-size: 0.5rem;
+	color: #ccc;
+}
+
+.footerbtn i{
+	font-size: 0.24rem;
+	color: #ccc;
+	font-style: normal;
+}
+
+.footer-active .footer-icon{
+	color: #f84431 !important;
+}
+.footer-active i{
+	color: #f84431 !important;
+}
